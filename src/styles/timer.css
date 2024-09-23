@@ -1,0 +1,25 @@
+.container-timer{
+    width: 100%;
+    background-color: #71cceb;
+    height: 4em;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+}
+
+.container-timer p{
+    margin: 20px 0px 0px 0px;
+    color: azure;
+    font-size: 1.4em;
+ }
+
+ .iconTimer{
+    width: 100px;
+ }
+
+ .container-grass{
+    width: 100%;
+    background-color: #058c42;
+    height: 4em;
+ }
