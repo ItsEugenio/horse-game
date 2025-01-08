@@ -60,7 +60,7 @@ function HorseRace() {
     resetRace();
     setRaceStarted(true);
     raceIntervalId.current = startRaceInterval(
-      worker1.current,
+      worker1.current,  
       worker2.current
     );
     if (timerWorker.current) {
@@ -171,7 +171,7 @@ function HorseRace() {
   return (
     <div className="horse-race">
       <div className="imageBack">
-        <h1>Carrera de Caballos</h1>
+        <h1 className="text-5xl">Carrera de Caballos</h1>
       </div>
 
       <Timer timer={timer} />
@@ -186,26 +186,23 @@ function HorseRace() {
           disabled={!canRollDice || !raceStarted}
           color="success"
           size="lg"
+          className="text-2xl"
         >
           Lanzar dado
         </Button>
         {!raceStarted && (
-          <Button onClick={startRace} color="primary" className="m-2" size="lg">
-            Comenzar Carrera IA
+          <Button onClick={startRace} color="primary" className="m-2 text-2xl" size="lg">
+            Comenzar Carrera 
           </Button>
         )}
-        <Button onClick={resetCounters} disabled={raceStarted} color="danger">
+        <Button onClick={resetCounters} disabled={raceStarted} color="danger" className="text-2xl">
           Reiniciar Contadores
         </Button>
       </div>
       <div className="container-floor">
         <HistoryModa history={raceHistory} />
       </div>
-      <div className="container-street"></div>
-      <div className="street-aux">
-
-      </div>
-      <div className="container-street"></div>
+      
     </div>
   );
 }

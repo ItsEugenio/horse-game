@@ -14,7 +14,7 @@ function HistoryModa({ history }) {
 
   return (
     <>
-      <Button onPress={onOpen} size="md" color="primary">
+      <Button onPress={onOpen} size="lg" color="primary" className="text-2xl">
         Abrir Historial
       </Button>
       <Modal
